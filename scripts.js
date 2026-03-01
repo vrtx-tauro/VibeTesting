@@ -33,21 +33,222 @@ const categories = [
 
 ];
 
-const itinerary = [
-    { dayId: 1, categoryId: 1, time: '10:35 AM', activity: 'Boston to Montreal', 
-        detail1: 'Flight Number AC 751', detail2: 'Confirmation AGVFZO', detail3: 'Terminal B', detail4: 'Arrive 6/6/2026 12:00 PM EDT' },
-    { dayId: 1, categoryId: 1, time: '01:05 PM', activity: 'Montreal to Tokyo', 
-        detail1: 'Flight Number AC 5', detail2: 'Confirmation AGVFZO', detail3: 'Terminal ??', detail4: 'Arrive 6/7/2026 3:25 PM GMT+9' },
-    { dayId: 1, categoryId: 2, time: '05:00 PM', activity: 'Narita Express to Shinjuku', 
-        detail1: '', detail2: 'Confirmation TBD', detail3: '', detail4: 'Arrive 6/7/2026 6:30 PM GMT+9' },
-    { dayId: 1, categoryId: 9, time: '07:00 PM', activity: 'Hotel Groove Shinjuku', 
-        detail1: '1-29-1, Kabukicho, Shinjuku-ku, Tokyo Japan 160-0021', detail2: 'Confirmation TBD', detail3: '', detail4: '' },
-    { dayId: 2, categoryId: 7, time: '12:30', activity: 'Lunch at local cafe', 
-        detail1: '', detail2: '', detail3: '', detail4: '' },
-    { dayId: 3, categoryId: 5, time: '15:00', activity: 'Visit museum', 
-        detail1: '', detail2: '', detail3: '', detail4: '' }
-];
 
+let itinerary = [
+    {
+        "day": "2024-06-06",
+        "category": "Flight",
+        "time": "10:35 AM",
+        "activity": "Boston to Montreal",
+        "detail1": "Flight: AC 751",
+        "detail2": "Confirmation: AGVFZ0",
+        "detail3": "Terminal B",
+        "detail4": "Arrive 6/6/2026 12:00 PM EDT"
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Flight",
+        "time": "1:05 PM",
+        "activity": "Montreal to Narita",
+        "detail1": "Flight: AC 5",
+        "detail2": "Confirmation: AGVFZ0",
+        "detail3": "",
+        "detail4": "Arrive 6/7/2026 3:25 PM GMT+9"
+    },
+    {
+        "day": "2024-06-07",
+        "category": "Train",
+        "time": "5:00 PM",
+        "activity": "Take Narita Express to Shinjuku",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": "Arrive 6/7/2026 6:30 PM GMT+9"
+    },
+    {
+        "day": "2024-06-07",
+        "category": "Hotel Check-in",
+        "time": "7:00 PM",
+        "activity": "Hotel Groove Shinjuku",
+        "detail1": "1-29-1, Kabukicho, Shinjuku-ku, Tokyo Japan 160-0021",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-07",
+        "category": "Cool Area",
+        "time": "8:00 PM",
+        "activity": "Explore Shinjuku",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-08",
+        "category": "Shrine",
+        "time": "",
+        "activity": "Senso-ji",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-08",
+        "category": "Shopping",
+        "time": "",
+        "activity": "Nakamise-dori",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-08",
+        "category": "Garden",
+        "time": "",
+        "activity": "Ueno Park",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-08",
+        "category": "Museum",
+        "time": "",
+        "activity": "Tokyo National Museum",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-08",
+        "category": "Museum",
+        "time": "",
+        "activity": "teamLab Borderless",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    },
+    {
+        "day": "2024-06-06",
+        "category": "Other Point of Interest",
+        "time": "",
+        "activity": "",
+        "detail1": "",
+        "detail2": "",
+        "detail3": "",
+        "detail4": ""
+    }
+]
+
+/*
+[];
 // Reads a CSV file (relative path) and parses it into an array of itinerary objects
 // CSV may contain a header row. Expected columns (if no header):
 // dayId,categoryId,time,activity,detail1,detail2,detail3,detail4
@@ -55,7 +256,6 @@ const itinerary = [
 // Reads a CSV file and populates `itinerary_new` array.
 // If the CSV has a header row, column names will be used as object keys.
 // Otherwise the default columns are: day,category,time,activity,detail1,detail2,detail3,detail4
-let itinerary_new = [];
 
 function readItineraryNew(csvPath = 'itinerary.csv') {
     return fetch(csvPath)
@@ -109,4 +309,4 @@ function readItineraryNew(csvPath = 'itinerary.csv') {
             return itinerary_new;
         });
 }
-
+*/
