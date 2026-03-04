@@ -41,7 +41,7 @@ let itinerary = [
         "time": "10:35 AM",
         "activity": "Boston to Montreal",
         "detail1": "Flight: AC 751",
-        "detail2": "Confirmation: AGVFZ0",
+        "detail2": "Confirmation: XXXXXX",
         "detail3": "Terminal B",
         "detail4": "Arrive 6/6/2026 12:00 PM EDT"
     },
@@ -51,7 +51,7 @@ let itinerary = [
         "time": "1:05 PM",
         "activity": "Montreal to Narita",
         "detail1": "Flight: AC 5",
-        "detail2": "Confirmation: AGVFZ0",
+        "detail2": "Confirmation: XXXXXX",
         "detail3": "",
         "detail4": "Arrive 6/7/2026 3:25 PM GMT+9"
     },
